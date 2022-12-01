@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/aoc22
+aoc22.so
+aoc22.dylib
+aoc22.dll
+aoc22.a
+aoc22.lib
+aoc22-test-*
+*.exe
+*.o
+*.obj
+*.lst
