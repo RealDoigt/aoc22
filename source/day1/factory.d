@@ -5,7 +5,7 @@ import day1.elf;
 
 auto makeElves(string inventory)
 {
-    Elf[] elves;
+    Elf*[] elves;
     ulong[] calories;
 
     foreach(line; inventory.split("\n"))
