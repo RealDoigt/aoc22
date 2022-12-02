@@ -8,9 +8,9 @@ auto makeElves(string inventory)
     Elf*[] elves;
     ulong[] calories;
 
-    foreach(line; inventory.split("\n"))
+    foreach(i, line; )
     {
-        if(line == "")
+        if(line == "" || i + )
         {
             elves ~= new Elf(calories);
             calories = [];
@@ -19,6 +19,8 @@ auto makeElves(string inventory)
 
         calories ~= line.to!ulong;
     }
+
+    elves ~= new Elf(calories);
 
     return elves;
 }
