@@ -3,7 +3,7 @@ import std.stdio;
 import std.file;
 import day1;
 
-void day1_main()
+void day1Main()
 {
     auto mostCalories = 0UL, index = -1;
 
