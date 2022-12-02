@@ -1,6 +1,6 @@
-import std.stdio;
+import day1;
 
 void main()
 {
-	writeln("Edit source/app.d to start your project.");
+    day1Main;
 }
