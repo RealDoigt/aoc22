@@ -16,7 +16,7 @@ auto findMostCalories(Elf*[] elves)
             index = i;
         }
 
-    "Elf #%d has the %d calories!".format(index, mostCalories).writeln;
+    "Elf #%d has %d calories!".format(index, mostCalories).writeln;
 
     return index;
 }
@@ -29,7 +29,9 @@ void day1Main()
     for (int i; i < 3; ++i)
     {
         index = elves.findMostCalories;
-        totalTop3 = elves[index].total;
+        totalTop3 += elves[index].total;
         elves.remove(index);
     }
+
+    "Total: %d calories".format(totalTop3).writeln;
 }
