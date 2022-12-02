@@ -1,4 +1,5 @@
 module day1_main;
+import std.string;
 import std.stdio;
 import std.file;
 import day1;
