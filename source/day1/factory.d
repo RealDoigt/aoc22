@@ -13,7 +13,7 @@ auto makeElves(string inventory)
         if(line == "")
         {
             elves ~= new Elf(calories);
-            calories.clear;
+            calories = [];
             continue;
         }
 
