@@ -1,5 +1,5 @@
 module day1_main;
-import std.std.algorithm.mutation;
+import std.algorithm.mutation;
 import std.string;
 import std.stdio;
 import std.file;
@@ -18,12 +18,12 @@ auto findMostCalories(Elf*[] elves)
 
     "Elf #%d has the %d calories!".format(index, mostCalories).writeln;
 
-    return i;
+    return index;
 }
 
 void day1Main()
 {
-    auto elves = "res/day1/input".readText.makeElves,
+    auto elves = "res/day1/input".readText.makeElves;
     ulong totalTop3, index;
 
     for (int i; i < 3; ++i)
