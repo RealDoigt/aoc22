@@ -12,7 +12,7 @@ void day1Main()
         if (elf.total > mostCalories)
         {
             mostCalories = elf.total;
-            index = -1;
+            index = i;
         }
 
     "Elf #%d has the %d calories!".format(index, mostCalories).writeln;
