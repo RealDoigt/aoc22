@@ -15,5 +15,5 @@ void day1Main()
             index = -1;
         }
 
-    "Elf #%d has the %d calories!".format(index, mostCalories);
+    "Elf #%d has the %d calories!".format(index, mostCalories).writeln;
 }
