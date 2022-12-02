@@ -20,5 +20,7 @@ auto makeElves(string inventory)
         calories ~= line.to!ulong;
     }
 
+    elves ~= new Elf(calories);
+
     return elves;
 }
