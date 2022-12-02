@@ -3,7 +3,6 @@ import std.array;
 import std.conv;
 import day1.elf;
 
-
 auto makeElves(string inventory)
 {
     Elf[] elves;
