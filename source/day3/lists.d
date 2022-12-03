@@ -17,7 +17,14 @@ auto toPriorities(char[] rucksack)
 
 auto toCompartments(ubyte[] priorities)
 {
-    ubyte[][] result;
+    ubyte[2][] result;
+
+    result[0] = priorities[0..($>>1)-1];
+    result[1] = priorities[($>>1)..$-1];
 
     return result;
+}
+
+auto findCommonPriority(ubyte[2][] priorities)
+{
 }
