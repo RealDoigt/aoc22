@@ -1,4 +1,4 @@
-module day1_main;
+module day1.main;
 import std.algorithm.mutation;
 import std.string;
 import std.stdio;
