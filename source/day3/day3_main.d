@@ -6,8 +6,11 @@ import day3;
 void day3Main()
 {
     uint[] priorities;
+    uint[] badges;
 
-    foreach(line; "res/day3/input".readText.split("\n"))
+    auto lines = "res/day3/input".readText.split("\n");
+
+    foreach(line; lines)
     {
         if (line.length == 0) continue;
         priorities ~= line.toPriorities.toCompartments.findCommonPriority;
