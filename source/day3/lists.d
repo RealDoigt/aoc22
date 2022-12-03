@@ -11,11 +11,7 @@ auto toPriorities(char[] rucksack)
 {
     ubyte[] result;
 
-    foreach (r; rucksack)
-    {
-
-    }
-
+    foreach (r; rucksack) result ~= r.toPriority;
     return result;
 }
 
