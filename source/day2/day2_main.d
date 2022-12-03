@@ -1,7 +1,5 @@
 module day2.main;
-import std.string;
-import std.stdio;
-import std.file;
+import common;
 import day2;
 
 void day2Main()
