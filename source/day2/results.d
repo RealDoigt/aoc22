@@ -21,3 +21,13 @@ auto getResult(Hand player, Hand elf)
 {
     return outcomes[player - 1][elf - 1];
 }
+
+auto getResult(char letter)
+{
+    final switch(letter)
+    {
+        case 'X': return Result.loss;
+        case 'Y': return Result.draw;
+        case 'Z': return Result.win;
+    }
+}
