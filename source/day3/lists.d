@@ -11,10 +11,11 @@ auto toPriorities(char[] rucksack)
 {
     ubyte[] result;
 
-    foreach (r; rucksack) result ~= r.toPriority;
+    foreach (item; rucksack) result ~= item.toPriority;
     return result;
 }
 
 auto toCompartments(ubyte[] priorities)
 {
+
 }
