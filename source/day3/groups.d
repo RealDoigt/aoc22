@@ -1,5 +1,5 @@
 module day3.groups;
-
+/*
 auto toGroups(uint[] inventories)
 {
     uint[][] result = [[]];
@@ -17,3 +17,4 @@ auto toGroups(uint[] inventories)
 
     return result;
 }
+*/
