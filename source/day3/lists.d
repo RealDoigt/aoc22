@@ -17,5 +17,7 @@ auto toPriorities(char[] rucksack)
 
 auto toCompartments(ubyte[] priorities)
 {
+    ubyte[][] result;
 
+    return result;
 }
