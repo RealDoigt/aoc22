@@ -1,7 +1,7 @@
 module day2.results;
 import day2;
 
-enum Result {loss, draw = 3, win = 6};
+enum Result {loss, draw = 3, win = 6}
 
 package
 {
