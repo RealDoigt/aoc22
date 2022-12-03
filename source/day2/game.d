@@ -15,8 +15,8 @@ struct Game
     {
         switch (expected)
         {
-            case Result.loss: player = elf.loseAgainst;
-            case Result.win: player = elf.winAgainst;
+            case Result.loss: player = elf.loseAgainst; break;
+            case Result.win: player = elf.winAgainst; break;
             default: player = elf;
         }
     }
