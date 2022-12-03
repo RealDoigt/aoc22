@@ -12,7 +12,9 @@ auto toPriorities(string rucksack)
 {
     uint[] result;
 
-    foreach (item; rucksack) result ~= item.toPriority;
+    foreach (item; rucksack)
+        result ~= item.toPriority;
+
     return result;
 }
 
@@ -20,8 +22,8 @@ auto toCompartments(uint[] priorities)
 {
     uint[][] result = [[],[]];
 
-    result[0] = priorities[0..($>>1)-1];
-    result[1] = priorities[($>>1)..$-1];
+    result[0] = priorities[0..$>>1];
+    result[1] = priorities[$>>1..$];
 
     return result;
 }
