@@ -26,10 +26,10 @@ auto toCompartments(uint[] priorities)
     return result;
 }
 
-auto findCommonPriority(uint[2][] priorities)
+auto findCommonPriority(uint[][] priorities)
 {
-    foreach(i, p; priorities[0])
-        if (priorities[2].canFind(p)) return p;
+    foreach(p; priorities[0])
+        if (priorities[1].canFind(p)) return p;
 
     // return error;
     return 100;
