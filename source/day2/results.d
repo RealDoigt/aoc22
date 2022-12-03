@@ -32,12 +32,22 @@ auto getResult(char letter)
     }
 }
 
-auto getLossAgainst(Hand h)
+auto loseAgainst(Hand h)
 {
     final switch(h)
     {
         case Hand.rock: return Hand.paper;
         case Hand.paper: return Hand.scissor;
-        case Hand.scissor: return Hand.scissor;
+        case Hand.scissor: return Hand.rock;
+    }
+}
+
+auto winAgainst(Hand h)
+{
+    final switch(h)
+    {
+        case Hand.rock: return Hand.scissor;
+        case Hand.paper: return Hand.rock;
+        case Hand.scissor: return Hand.paper;
     }
 }
