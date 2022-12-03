@@ -31,3 +31,13 @@ auto getResult(char letter)
         case 'Z': return Result.win;
     }
 }
+
+auto getLossAgainst(Hand h)
+{
+    final switch(h)
+    {
+        case Hand.rock: return Hand.paper;
+        case Hand.paper: return Hand.scissor;
+        case Hand.scissor: return Hand.scissor;
+    }
+}
