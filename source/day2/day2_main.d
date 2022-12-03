@@ -4,7 +4,7 @@ import std.stdio;
 import std.file;
 import day2;
 
-public void day2Main()
+void day2Main()
 {
     uint total;
     auto lines = "res/day2/input".readText.split("\n");
