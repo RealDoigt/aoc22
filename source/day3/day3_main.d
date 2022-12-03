@@ -1,4 +1,4 @@
- module day3.main;
+module day3.main;
 
 void main()
 {
