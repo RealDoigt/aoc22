@@ -5,13 +5,16 @@ import day2;
 
 struct Game
 {
-    private
+    private Hand player, elf;
+
+    this (Hand player, Hand elf)
     {
-        Hand player, elf;
+        this.player = player;
+        this.elf = elf;
+    }
 
-        auto getResult()
-        {
-
-        }
+    auto score()
+    {
+        return player + getResult(player, elf);
     }
 }
