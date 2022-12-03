@@ -1,4 +1,5 @@
 module day3.lists;
+import std.algorithm.searching;
 import std.ascii;
 
 auto toPriority(char item)
@@ -27,4 +28,9 @@ auto toCompartments(ubyte[] priorities)
 
 auto findCommonPriority(ubyte[2][] priorities)
 {
+    foreach(i, p; priorities[0])
+        if (priorities[2].canFind(p)) return p;
+
+    // return error;
+    return 100;
 }
