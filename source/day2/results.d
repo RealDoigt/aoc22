@@ -32,7 +32,7 @@ auto getResult(char letter)
     }
 }
 
-auto loseAgainst(Hand h)
+auto winAgainst(Hand h)
 {
     final switch(h)
     {
@@ -42,7 +42,7 @@ auto loseAgainst(Hand h)
     }
 }
 
-auto winAgainst(Hand h)
+auto loseAgainst(Hand h)
 {
     final switch(h)
     {
