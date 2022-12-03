@@ -1,6 +1,14 @@
 import day1;
+import day2;
+import std.algorithm.searching;
 
-void main()
+void main(string[] args)
 {
-    day1Main;
+    if (args.length == 1) day2Main;
+
+    else
+    {
+        if (args.canFind("1")) day1Main;
+        if (args.canFind("2")) day2Main;
+    }
 }
