@@ -1,8 +1,6 @@
 module day1.main;
 import std.algorithm.mutation;
-import std.string;
-import std.stdio;
-import std.file;
+import common;
 import day1;
 
 auto findMostCalories(Elf*[] elves)
