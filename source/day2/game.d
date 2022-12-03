@@ -19,6 +19,8 @@ struct Game
             case Result.win: player = elf.winAgainst; break;
             default: player = elf;
         }
+
+        this.elf = elf;
     }
 
     auto score()
