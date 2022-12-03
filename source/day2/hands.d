@@ -1,6 +1,6 @@
 module day2.hands;
 
-enum Hand {rock = 1, paper = 2, scissor = 3};
+enum Hand {rock = 1, paper = 2, scissor = 3}
 
 auto getHand(char letter)
 {
