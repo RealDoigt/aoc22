@@ -19,5 +19,11 @@ public void day2Main()
 
     total = 0;
 
+    foreach(line; lines)
+    {
+        if (line.length == 0) continue;
+        total += Game(line[2].getResult, line[0].getHand).score;
+    }
 
+    "The total score is %d for the second strategy".format(total).writeln;
 }
