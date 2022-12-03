@@ -8,7 +8,7 @@ auto toPriority(char item)
     return item.isLower ? u - 96 : u - 38;
 }
 
-auto toPriorities(char[] rucksack)
+auto toPriorities(string rucksack)
 {
     uint[] result;
 
@@ -18,7 +18,7 @@ auto toPriorities(char[] rucksack)
 
 auto toCompartments(uint[] priorities)
 {
-    uint[2][] result;
+    uint[][] result = [[],[]];
 
     result[0] = priorities[0..($>>1)-1];
     result[1] = priorities[($>>1)..$-1];
