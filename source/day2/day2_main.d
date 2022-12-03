@@ -10,7 +10,9 @@ public void day2Main()
 
     foreach(line; "res/day2/input".readText.split("\n"))
     {
-        if (line.length == 0) break;
+        if (line.length == 0) continue;
         total += Game(line[2].getHand, line[0].getHand).score;
     }
+
+    "The total score is %d".format(total).writeln;
 }
