@@ -4,21 +4,21 @@ import std.ascii;
 
 auto toPriority(char item)
 {
-    auto u = cast(ubyte)item;
+    auto u = cast(uint)item;
     return item.isLower ? u - 96 : u - 38;
 }
 
 auto toPriorities(char[] rucksack)
 {
-    ubyte[] result;
+    uint[] result;
 
     foreach (item; rucksack) result ~= item.toPriority;
     return result;
 }
 
-auto toCompartments(ubyte[] priorities)
+auto toCompartments(uint[] priorities)
 {
-    ubyte[2][] result;
+    uint[2][] result;
 
     result[0] = priorities[0..($>>1)-1];
     result[1] = priorities[($>>1)..$-1];
@@ -26,7 +26,7 @@ auto toCompartments(ubyte[] priorities)
     return result;
 }
 
-auto findCommonPriority(ubyte[2][] priorities)
+auto findCommonPriority(uint[2][] priorities)
 {
     foreach(i, p; priorities[0])
         if (priorities[2].canFind(p)) return p;
