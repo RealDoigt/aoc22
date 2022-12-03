@@ -5,16 +5,15 @@ import day3;
 
 void day3Main()
 {
-    uint[] priorities;
+    uint[] commonPriorities;
     uint[] badges;
 
-    auto lines = "res/day3/input".readText.split("\n");
-
-    foreach(line; lines)
+    foreach(line; "res/day3/input".readText.split("\n"))
     {
         if (line.length == 0) continue;
-        priorities ~= line.toPriorities.toCompartments.findCommonPriority;
+        auto priorities = line.toPriorities;
+        commonPriorities ~= priorities.toCompartments.findCommonPriority;
     }
 
-    "The priorities total is %d".format(priorities.sum).writeln;
+    "The priorities total is %d".format(commonPriorities.sum).writeln;
 }
