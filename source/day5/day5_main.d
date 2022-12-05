@@ -14,12 +14,13 @@ void day5Main()
     foreach (line; "res/day5/moves".readText.split("\n"))
         foreach (params; line.split(","))
         {
+            if (params.length < 3) continue;
             int moves = params[0].to!int,
                 from = params[1].to!int,
                 to = params[2].to!int;
 
             for (int i; i < moves; ++i)
-                stack.moveCrate(from, to);
+                stacks.moveCrate(from, to);
         }
 
     stacks.print;
