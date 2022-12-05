@@ -12,7 +12,7 @@ void print(ref char[8][56] stacks)
     }
 }
 
-auto isOccupied(ref char[8][56] stacks, int x, int y)
+auto isOccupied(ref char[8][56] stacks, int y, int x)
 {
     return stacks[y][x] >= 'A' && stacks[y][x] <= 'Z';
 }
