@@ -1,20 +1,19 @@
 module day3.groups;
-/*
-auto toGroups(uint[] inventories)
+
+auto toGroups(string[] inventory)
 {
-    uint[][] result = [[]];
+    string[][] result = new string[][](inventory.length / 3 + 1);
 
-    for(int i, j; i < inventories.length; ++i)
+    for (int i = 0; i < inventory.length; ++i)
     {
-        if (i % 3 == 0)
-        {
-            result ~= [];
-            ++j;
-        }
+        int index = i / 3;
 
-        result[j]
+        if (result[index] is null)
+            result[index] = new string[3];
+
+        result[index][i % 3] = inventory[i];
     }
 
     return result;
 }
-*/
+
