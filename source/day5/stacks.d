@@ -1,7 +1,7 @@
 module day5.stacks;
 import common;
 
-void print(ref char[8][56] stacks)
+void print(ref char[9][56] stacks)
 {
     for (int i; i < 9; ++i)
     {
@@ -12,12 +12,12 @@ void print(ref char[8][56] stacks)
     }
 }
 
-auto isOccupied(ref char[8][56] stacks, int y, int x)
+auto isOccupied(ref char[9][56] stacks, int y, int x)
 {
     return stacks[y][x] >= 'A' && stacks[y][x] <= 'Z';
 }
 
-void moveCrate(ref char[8][56] stacks, int from, int to)
+void moveCrate(ref char[9][56] stacks, int from, int to)
 {
     char toMove;
 

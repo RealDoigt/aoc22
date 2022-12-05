@@ -5,7 +5,7 @@ import day5;
 
 void day5Main()
 {
-    char[8][56] stacks;
+    char[9][56] stacks;
 
     foreach (i, line; "res/day5/stacks".readText.split("\n"))
         foreach (j, c; line)
