@@ -1,4 +1,5 @@
 module day5.main;
+import std.conv;
 import common;
 import day5;
 
@@ -9,6 +10,17 @@ void day5Main()
     foreach (i, line; "res/day5/stacks".readText.split("\n"))
         foreach (j, c; line)
             stacks[i][j] = c;
+
+    foreach (line; "res/day5/moves".readText.split("\n"))
+        foreach (params; line.split(","))
+        {
+            int moves = params[0].to!int,
+                from = params[1].to!int,
+                to = params[2].to!int;
+
+            for (int i; i < moves; ++i)
+                stack.moveCrate(from, to);
+        }
 
     stacks.print;
 }
