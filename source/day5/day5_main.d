@@ -16,9 +16,9 @@ void day5Main()
         {
             if (params.length < 3) continue;
 
-            int moves = params[0].to!int - 1,
-                from = params[1].to!int,
-                to = params[2].to!int;
+            int moves = params[0].to!int,
+                from = params[1].to!int - 1,
+                to = params[2].to!int - 1;
 
             for (int i; i < moves; ++i)
                 stacks.moveCrate(from, to);
