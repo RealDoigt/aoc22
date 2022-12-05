@@ -15,7 +15,8 @@ void day5Main()
         foreach (params; line.split(","))
         {
             if (params.length < 3) continue;
-            int moves = params[0].to!int,
+
+            int moves = params[0].to!int - 1,
                 from = params[1].to!int,
                 to = params[2].to!int;
 
